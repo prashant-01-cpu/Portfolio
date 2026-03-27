@@ -383,17 +383,30 @@ a {
 
 
 @media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+        margin: 10px 0;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+    }
+
     .hero-content {
         flex-direction: column;
         text-align: center;
-    }
-
-    .hero-text {
-        order: 1;
-    }
-
-    .hero-image {
-        order: 0;
     }
 
     .about-layout,
@@ -401,17 +414,9 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .section-title {
-        text-align: center;
-    }
-
+    .section-title,
     .section-intro {
         text-align: center;
-    }
-
-    .navbar a {
-        margin-left: 0.6rem;
-        font-size: 0.85rem;
     }
 }
 
