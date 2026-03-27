@@ -402,17 +402,23 @@ a {
 @media (max-width: 480px) {
     .nav-container {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 0.4rem;
+        align-items: center; /* center looks better */
+        gap: 10px;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .navbar a {
-        margin-left: 0;
-        margin-right: 0.8rem;
-    }
-
-    .hero-text h1 {
-        font-size: 1.8rem;
+        margin: 5px 10px;
+        font-size: 0.9rem;
     }
 }
-
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
