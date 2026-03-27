@@ -30,8 +30,7 @@ a {
   margin: auto;
 }
 
-/* Header / Navigation */
-/* Header / Navigation */
+
 .site-header {
     background-color: #ffffff;
     border-bottom: 1px solid #e3e3e3;
@@ -44,11 +43,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative; /* IMPORTANT */
+    position: relative; 
     padding: 0.75rem 0;
 }
-
-/* Logo image (LEFT) */
 .logo-photo {
     width: 50px;
     height: 50px;
@@ -57,7 +54,7 @@ a {
     border: 1px solid #c3cffc;
 }
 
-/* Center title */
+
 .logo {
     position: absolute;
     left: 50%;
@@ -67,7 +64,7 @@ a {
     letter-spacing: 1px;
 }
 
-/* Navbar (RIGHT) */
+
 .navbar {
     display: flex;
     gap: 15px;
@@ -88,7 +85,7 @@ a {
     border-bottom-color: #4b6cff;
 }
 
-/*(Home) */
+
 .hero {
     padding: 3rem 0 2.5rem;
     background: linear-gradient(135deg, #f0f4ff, #ffffff);
@@ -130,7 +127,7 @@ a {
     color: #555;
 }
 
-/* Buttons */
+
 .btn {
     display: inline-block;
     padding: 0.6rem 1.3rem;
@@ -199,7 +196,7 @@ a {
     height: 100%;
     object-fit: cover;          
 }
-/* Sections */
+
 .section {
     padding: 2.5rem 0;
 }
@@ -384,7 +381,7 @@ a {
 
 @media (max-width: 768px) {
     .nav-container {
-        flex-direction: row;   /* KEEP SAME ROW */
+        flex-direction: row;  
         justify-content: space-between;
     }
 
@@ -403,7 +400,7 @@ a {
 @media (max-width: 480px) {
     .nav-container {
         flex-direction: column;
-        align-items: center; /* center looks better */
+        align-items: center; 
         gap: 10px;
     }
 
