@@ -178,8 +178,8 @@ a {
     background-color: #ffffff;
 }*/
 .logo-photo {
-    width: 50px;
-    height : 50px;
+    width: 45px;
+    height : 45px;
     border-radius : 50%;
     overflow : hidden;
     border:  none;
@@ -381,20 +381,28 @@ a {
 
 @media (max-width: 768px) {
     .nav-container {
-        flex-direction: row;  
+        display: flex;
+        flex-direction: row; /* KEEP ROW */
         justify-content: space-between;
+        align-items: center;
     }
 
     .logo {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        font-size: 1.2rem;
     }
 
     .navbar {
+        display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        gap: 10px;
+        gap: 8px;
+    }
+
+    .navbar a {
+        font-size: 0.8rem;
     }
 }
 @media (max-width: 480px) {
