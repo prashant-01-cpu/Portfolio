@@ -183,9 +183,9 @@ a {
 .logo-photo {
     width: 50px;
     height : 50px;
-    border-radius : 12.5%;
+    border-radius : 50%;
     overflow : hidden;
-    border:  1px solid #c3cffc;
+    border:  none;
 }
 .profile-photo {
     width: 200px;
@@ -384,42 +384,22 @@ a {
 
 @media (max-width: 768px) {
     .nav-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;   /* KEEP SAME ROW */
+        justify-content: space-between;
     }
 
     .logo {
-        position: static;
-        transform: none;
-        margin: 10px 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .navbar {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-end;
         gap: 10px;
     }
-
-    .navbar a {
-        font-size: 0.9rem;
-    }
-
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-layout,
-    .contact-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .section-title,
-    .section-intro {
-        text-align: center;
-    }
 }
-
 @media (max-width: 480px) {
     .nav-container {
         flex-direction: column;
