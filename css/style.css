@@ -25,9 +25,9 @@ a {
 
 
 .container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* Header / Navigation */
@@ -414,4 +414,15 @@ a {
     .hero-text h1 {
         font-size: 1.8rem;
     }
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 150px;
+    margin-top: 20px;
+  }
 }
